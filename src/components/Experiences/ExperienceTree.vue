@@ -18,7 +18,7 @@ console.log(experiences);
                         <span class="slds-assistive-text">Expand Tree Branch</span>
                     </button>
                     <span class="slds-has-flexi-truncate">
-                        <span class="slds-tree__item-label slds-truncate" :title="experience.client">
+                        <span class="slds-tree__item-label" :title="experience.client">
                             <div class="slds-text-title_caps"><strong>{{ experience.client }}</strong></div>
                         </span>
                     </span>
@@ -34,7 +34,7 @@ console.log(experiences);
                                     <span class="slds-assistive-text">Expand Tree Branch</span>
                                 </button>
                                 <span class="slds-has-flexi-truncate">
-                                    <span class="slds-tree__item-label slds-truncate" :title="detail.role">
+                                    <span class="slds-tree__item-label" :title="detail.role">
                                         <strong>{{ detail.role }}</strong>
                                     </span>
                                 </span>
@@ -50,7 +50,7 @@ console.log(experiences);
                                                 <span class="slds-assistive-text">Expand Tree Item</span>
                                             </button>
                                             <span class="slds-has-flexi-truncate">
-                                                <span class="slds-tree__item-label slds-truncate" :title="contentItem">{{ contentItem }}</span>
+                                                <span class="slds-tree__item-label" :title="contentItem">{{ contentItem }}</span>
                                             </span>
                                         </div>
                                     </li>
