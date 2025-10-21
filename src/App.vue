@@ -1,30 +1,23 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import '@salesforce-ux/design-system/assets/styles/salesforce-lightning-design-system.css'
+import Header from './components/Header/Header.vue';
+import Details from './components/Details/Details.vue';
+import Experiences from './components/Experiences/Experiences.vue';
+
 </script>
 
 <template>
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div class="slds-m-around--medium">
+    <Header />
+    <div class="slds-grid slds-gutters slds-m-top--medium">
+      <div class="slds-col slds-size--9-of-12">
+        <Details />
+      </div>
+      <div class="slds-col slds-size--3-of-12">
+        <experiences />
+      </div>
+    </div>
   </div>
-  <HelloWorld msg="Vite + Vue" />
-</template>
+  </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
+<style scoped></style>
