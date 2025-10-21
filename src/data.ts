@@ -9,6 +9,9 @@ export const atti: Profile = {
     company: "Deloitte Digital",
     country: "Italy",
 
+    education: `Earned a Bachelor’s Degree in Computer Science and Technologies for Software Production from the University of Bari “Aldo Moro”, with a final project that designed and implemented an ontology-based recommender system for cooking recipes, delivering highly accurate and personalized suggestions.`,
+    description: `Solution Architect with 10 years of experience in consulting and 8 with Salesforce. I influence stakeholders in choosing solutions that embrace standard and custom and that are as scalable as possible. An expert in the Automotive industry, I have led the implementation of CRM and dealer portals for several automotive vendors. Curious and proactive, I try to learn about any new technology, even those not related to the Salesforce world. Native italian speaker, fluent in English thanks to experience with clients from London (UK)`,
+
     jobHistory: [
         {
             role: 'Senior Consultant',

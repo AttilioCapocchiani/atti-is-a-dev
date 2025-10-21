@@ -29,25 +29,26 @@ const { data } = defineProps(['data'])
         <div class="slds-form__row slds-m-top--small">
             <div class="slds-form__item" role="listitem">
                 <div class="slds-form-element slds-form-element_edit slds-form-element_readonly slds-form-element_stacked slds-hint-parent">
-                    <span class="slds-form-element__label">Email</span>
+                    <span class="slds-form-element__label">Education</span>
                     <div class="slds-form-element__control">
                         <div class="slds-form-element__static">
-                            {{data.email}}
+                            {{data.education}}
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="slds-form__row slds-m-top--small">
             <div class="slds-form__item" role="listitem">
                 <div class="slds-form-element slds-form-element_edit slds-form-element_readonly slds-form-element_stacked slds-hint-parent">
-                    <span class="slds-form-element__label">Phone</span>
+                    <span class="slds-form-element__label">Description</span>
                     <div class="slds-form-element__control">
                         <div class="slds-form-element__static">
-                            {{ data.phone }}
+                            {{data.description}}
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </template>

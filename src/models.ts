@@ -7,6 +7,9 @@ export interface Profile {
     company: string;
     country: string;
 
+    education: string;
+    description: string;
+
     jobHistory?: Experience[]
     certifications?: Certification[]
 }
