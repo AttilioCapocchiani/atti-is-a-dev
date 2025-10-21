@@ -1,6 +1,9 @@
 <script setup lang="ts">
-const x: string = ""
-console.log(x);
+import CertificationsTable from "./CertificationsTable.vue";
+
+const { certifications } = defineProps(['certifications'])
+console.table(certifications)
+
 </script>
 
 <template>
@@ -13,7 +16,9 @@ console.log(x);
                 </li>
             </ul>
             <div id="tab-default-1" class="slds-tabs_default__content slds-show" role="tabpanel"
-                aria-labelledby="tab-default-1__item">Related Content</div>
+                aria-labelledby="tab-default-1__item">
+                <certifications-table :certifications="certifications" />
+            </div>
         </div>
     </div>
 </template>

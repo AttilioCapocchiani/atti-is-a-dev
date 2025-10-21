@@ -1,12 +1,16 @@
 <script setup lang="ts">
 import '@salesforce-ux/design-system/assets/styles/salesforce-lightning-design-system.css'
 import { ref } from 'vue';
-const name = ref('Attilio Capocchiani');
+//const name = ref('Attilio Capocchiani');
+
+const { name, jobTitle, company, country } = defineProps(['name', 'jobTitle', 'company', 'country'])
+
 const compactInfo = ref([
-  { label: 'Job Title', value: 'Senior Consultant' },
-  { label: 'Company', value: 'Deloitte Digital' },
-  { label: 'Country', value: 'Italy' },
+  { label: 'Job Title', value: jobTitle },
+  { label: 'Company', value: company },
+  { label: 'Country', value: country },
 ])
+
 </script>
 <template>
     <div class="slds-page-header slds-page-header_record-home">
@@ -14,9 +18,9 @@ const compactInfo = ref([
       <div class="slds-page-header__col-title">
         <div class="slds-media">
           <div class="slds-media__figure">
-            <span class="slds-icon_container slds-icon-standard-account">
+            <span class="slds-icon_container slds-icon-standard-employee">
               <svg class="slds-icon slds-page-header__icon" aria-hidden="true">
-                <use xlink:href="../../assets/icons/standard-sprite/svg/symbols.svg#person_account"></use>
+                <use xlink:href="../../assets/icons/standard-sprite/svg/symbols.svg#employee"></use>
               </svg>
             </span>
           </div>

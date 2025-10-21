@@ -3,17 +3,25 @@ import '@salesforce-ux/design-system/assets/styles/salesforce-lightning-design-s
 import Header from './components/Header/Header.vue';
 import Details from './components/Details/Details.vue';
 import Experiences from './components/Experiences/Experiences.vue';
+import { atti } from './data.ts'
+
+
 
 </script>
 
 <template>
   <div class="slds-m-around--medium">
-    <Header />
-    <div class="slds-grid slds-gutters slds-m-top--medium">
-      <div class="slds-col slds-size--9-of-12">
-        <Details />
+    <Header
+      :name="atti.name"
+      :job-title="atti.jobTitle"
+      :company="atti.company"
+      :country="atti.country"
+    />
+    <div class="slds-grid slds-m-top--medium">
+      <div class="slds-col slds-size--8-of-12 slds-m-right--x-small">
+        <Details :certifications="atti.certifications" />
       </div>
-      <div class="slds-col slds-size--3-of-12">
+      <div class="slds-col slds-size--4-of-12">
         <experiences />
       </div>
     </div>
