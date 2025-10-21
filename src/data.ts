@@ -1,12 +1,80 @@
 import type {Profile} from "./models.ts";
 
 export const atti: Profile = {
-    name: "Attilio Capocchiani",
+    firstName: "Attilio",
+    lastName: "Capocchiani",
+    email: "attilio.capocchiani@gmail.com",
+    phone: "+39 3472511041",
     jobTitle: "Senior Consultant",
     company: "Deloitte Digital",
     country: "Italy",
 
-    jobHistory: [],
+    jobHistory: [
+        {
+            role: 'Senior Consultant',
+            company: 'Deloitte Digital',
+            period: '2017 - Present',
+            description:
+                `Applying standard and custom solutions for various customers in different industries (Automotive, Energy, Banking)
+                    Leading teams for the development of complex solutions.
+                    Pre-sales activities for new potential customers.`,
+            expanded: false,
+            details: [
+                {
+                    client: "Automotive Client",
+                    expanded: true,
+                    details: [
+                        {
+                            role: "Solution Lead – Tech Advisor",
+                            expanded: false,
+                            content: [
+                                "Solution design to satisfy business requirements using best practices",
+                                "Cross-country Development team management",
+                                "End-to-end solution design",
+                                "Training sessions to final users of the platform",
+                                "Support in pre-sales",
+                                "Build POC (incl. Agentforce)"
+                            ]
+                        },
+                        {
+                            role: "Technical Leader – Release Manager",
+                            expanded: false,
+                            content: [
+                                "Technical solution design to satisfy business requirements using best practices",
+                                "Cross-country Development team management",
+                                "Code review",
+                                "Release management",
+                                "Solution presentation to the customer",
+                                "Agile management of deploys for sprints"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    client: "Automotive Client",
+                    expanded: true,
+                    details: [
+                        {
+                            role: "Developer",
+                            expanded: false,
+                            content: [
+                                "Development of a full B2C portal that aims to onboard new clients",
+                                "Development and maintenance of custom features for Service Cloud"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            role: 'Java Developer',
+            company: 'Advancia Technology',
+            period: '2015 - 2017',
+            description: 'Collaborated within a development team to maintain and implement minor enhancements for an application enabling bank employees to efficiently manage automotive and real estate leasing processes, ensuring system reliability and continuous improvement.',
+            expanded: false,
+            details: []
+        }
+    ],
     certifications: [
         {name: "Salesforce Certified Platform Developer I", issuer: "Salesforce"},
         {name: "Salesforce Certified Administrator", issuer: "Salesforce"},

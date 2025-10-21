@@ -1,5 +1,8 @@
 export interface Profile {
-    name: string;
+    firstName: string;
+    lastName: string;
+    email: string;
+    phone: string;
     jobTitle: string;
     company: string;
     country: string;
