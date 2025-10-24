@@ -14,7 +14,13 @@ const toggleOpen = function(index: number) {
 
 <template>
     <div class="slds-box slds-theme_default">
-        <ul class="slds-timeline">
+        <ul class="slds-tabs_default__nav" role="tablist">
+            <li class="slds-tabs_default__item slds-is-active" title="Job Experience" role="presentation">
+                <a class="slds-tabs_default__link" role="tab" tabindex="0" aria-selected="true" aria-controls="tab-default-1" id="tab-default-1__item">Job Experience</a>
+            </li>
+        </ul>
+        <div id="tab-default-1" class="slds-tabs_default__content slds-show" role="tabpanel" aria-labelledby="tab-default-1__item">
+            <ul class="slds-timeline">
             <li v-for="(experience, index) in experiences" :key="index">
                 <div class="slds-timeline__item_expandable slds-timeline__item_email" :class=" { 'slds-is-open': experience.expanded }">
                     <span class="slds-assistive-text">task</span>
@@ -67,5 +73,6 @@ const toggleOpen = function(index: number) {
                 </div>
             </li>
         </ul>
+        </div>
     </div>
 </template>
