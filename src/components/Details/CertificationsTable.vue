@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Certification} from "../../models.js";
+import type { Certification} from "../../models.js";
 
 const props = defineProps(['certifications'])
 const certifications : Certification[] = props.certifications
