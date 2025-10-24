@@ -7,20 +7,20 @@
 </script>
 
 <template>
-  <div class="slds-m-around--medium">
+  <div class="slds-p-around--medium">
     <Header
       :name="atti.firstName + ' ' + atti.lastName"
       :job-title="atti.jobTitle"
       :company="atti.company"
       :country="atti.country"
     />
-    <div class="slds-grid slds-m-top--medium">
-      <div class="slds-col slds-size--8-of-12 slds-m-right--x-small">
+    <div class="slds-grid slds-m-top--small">
+      <div class="slds-col slds-size--7-of-12 slds-p-right--x-small">
         <Details
           :atti="atti"
           :certifications="atti.certifications" />
       </div>
-      <div class="slds-col slds-size--4-of-12">
+      <div class="slds-col slds-size--5-of-12">
         <experiences :experiences="atti.jobHistory" />
       </div>
     </div>
