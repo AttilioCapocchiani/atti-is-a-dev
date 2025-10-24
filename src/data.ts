@@ -28,7 +28,8 @@ export const atti: Profile = {
         {name: "Salesforce Certified Data Architect", issuer: "Salesforce"},
         {name: "Salesforce Certified Application Architect", issuer: "Salesforce"},
         {name: "Salesforce Certified AI Associate", issuer: "Salesforce"},
-        {name: "Scrum Master", issuer: "Scrum"}
+        {name: "Mulesoft Associate", issuer: "Salesforce"},
+        {name: "Scrum Master", issuer: "APMG International"}
     ],
 
     jobHistory: [
@@ -161,7 +162,7 @@ export const atti: Profile = {
         },
         {
             "role": "Java Developer",
-            "company": "Advancia Technologies - Fully on Client site",
+            "company": "Advancia Technologies",
             "period": "September 2015 - September 2017",
             "description": "Collaborated within a development team to maintain and implement minor enhancements for an application enabling bank employees to efficiently manage automotive and real estate leasing processes, ensuring system reliability and continuous improvement.",
             "expanded": false,

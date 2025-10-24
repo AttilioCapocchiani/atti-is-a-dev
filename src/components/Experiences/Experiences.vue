@@ -47,9 +47,11 @@ const toggleOpen = function(index: number) {
                                     class="slds-grid slds-grid_vertical-align-center slds-truncate_container_75 slds-no-space">
                                     <h3 class="slds-truncate"
                                         :title="experience.role + ' | ' + experience.company">
-                                        <a href="#">
-                                            <strong>{{ experience.role }}</strong> at <strong>{{ experience.company }}</strong>
-                                        </a>
+                                        <span href="#">
+                                            <!--<strong>{{ experience.role }}</strong> at <strong>{{ experience.company }}</strong>-->
+                                            <strong>{{ experience.company }}</strong> <br />
+                                            {{ experience.role }}
+                                        </span>
                                     </h3>
                                 </div>
                                 <div class="slds-timeline__actions slds-timeline__actions_inline">
