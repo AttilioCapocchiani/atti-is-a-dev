@@ -6,6 +6,7 @@ export interface Profile {
     jobTitle: string;
     company: string;
     country: string;
+    links: Links;
 
     education: string;
     description: string;
@@ -38,4 +39,9 @@ export interface ExperienceDetail {
 export interface Certification {
     name: string;
     issuer: string;
+}
+
+export interface Links {
+    linkedIn: string;
+    trailhead: string;
 }
