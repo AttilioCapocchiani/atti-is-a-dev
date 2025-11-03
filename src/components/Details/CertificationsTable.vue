@@ -4,7 +4,6 @@ import type { Certification} from "../../models.js";
 const props = defineProps(['certifications'])
 const certifications : Certification[] = props.certifications
 
-console.log('CT', JSON.stringify(certifications))
 </script>
 <template>
     <article class="slds-card">
@@ -44,7 +43,7 @@ console.log('CT', JSON.stringify(certifications))
             </div>
             <div class="slds-page-header__row">
                 <div class="slds-page-header__col-meta">
-                    <p class="slds-page-header__meta-text"> {{certifications.length}} items • Updated 13 minutes ago</p>
+                    <p class="slds-page-header__meta-text"> {{certifications.length}} items • Updated 1 month ago</p>
                 </div>
             </div>
         </div>

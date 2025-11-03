@@ -13,6 +13,8 @@ export interface Profile {
 
     jobHistory?: Experience[]
     certifications?: Certification[]
+
+    lookingForJob: boolean
 }
 
 export interface Experience {

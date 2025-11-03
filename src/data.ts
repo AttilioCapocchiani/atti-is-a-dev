@@ -189,5 +189,7 @@ export const atti: Profile = {
                 }
             ]
         }
-    ]
+    ],
+
+    lookingForJob: true
 }

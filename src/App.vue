@@ -13,7 +13,10 @@
       :job-title="atti.jobTitle"
       :company="atti.company"
       :country="atti.country"
+      :email="atti.email"
+      :looking-for-job="atti.lookingForJob"
     />
+
     <div class="slds-grid slds-m-top--small">
       <div class="slds-col slds-size--7-of-12 slds-p-right--x-small">
         <Details
