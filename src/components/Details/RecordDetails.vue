@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-const { data, links } = defineProps(['data'])
+const { data } = defineProps(['data'])
 
 const isInfoSectionOpen = ref<boolean>(true)
 const isLinkSectionOpen = ref<boolean>(true)
