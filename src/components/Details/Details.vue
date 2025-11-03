@@ -4,8 +4,6 @@ import RecordDetails from "./RecordDetails.vue";
 import {ref} from "vue";
 
 const { atti } = defineProps(['atti'])
-console.log('atti', atti)
-
 const selectedTab = ref(0)
 
 const setActiveTab = function(tab: number) {

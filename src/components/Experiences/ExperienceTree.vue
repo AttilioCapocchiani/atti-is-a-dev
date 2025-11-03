@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import { defineProps } from 'vue';
 const { experiences } = defineProps(['experiences'])
-
-console.log(experiences);
 </script>
 
 <template>
