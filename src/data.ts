@@ -10,7 +10,7 @@ export const atti: Profile = {
     country: "Italy",
     links: {
         linkedIn: "https://www.linkedin.com/in/%E2%98%81%EF%B8%8F-attilio-capocchiani-ba02117b/",
-        trailhead: "trailhead"
+        trailhead: "https://www.salesforce.com/trailblazer/realatti"
     },
 
     education: `Earned a Bachelor’s Degree in Computer Science and Technologies for Software Production from the University of Bari “Aldo Moro”, with a final project that designed and implemented an ontology-based recommender system for cooking recipes, delivering highly accurate and personalized suggestions.`,

@@ -88,7 +88,7 @@ const toggleLinkOpen = function () {
                     <span class="slds-form-element__label">LinkedIn</span>
                     <div class="slds-form-element__control">
                         <div class="slds-form-element__static">
-                            <a v-bind:href="`${data.links.linkedin}`">{{ data.links.linkedIn}}</a>
+                            <a v-bind:href="`${data.links.linkedIn}`">{{ data.links.linkedIn}}</a>
                         </div>
                     </div>
                 </div>
